@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Order summary card by Aleksei Kovalev</title>
+
+    <style>
+      :root {
+        --pale-blue: hsl(225, 100%, 94%);
+        --bright-blue: hsl(245, 75%, 52%);
+        --pale-blue2: hsl(225, 100%, 98%);
+        --desaturated-blue: hsl(224, 23%, 55%);
+        --dark-blue: hsl(223, 47%, 23%);
+      }
+
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Red Hat Display", sans-serif;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        background-image: url("images/pattern-background-mobile.svg");
+        background-repeat: none;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+      }
+
+      .container {
+        max-width: 90%;
+        width: 30rem;
+        margin: 0 auto;
+        border-radius: 15px;
+        background-color: #fff;
+      }
+
+      .image {
+        height: 10rem;
+        background-image: url("images/illustration-hero.svg");
+        background-repeat: none;
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px 15px 0 0;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+      }
+
+      .info h2 {
+        margin-bottom: 1rem;
+        font-weight: 900;
+        color: var(--dark-blue);
+      }
+
+      .info p {
+        color: var(--desaturated-blue);
+        font-weight: 500;
+        font-size: 0.9rem;
+        line-height: 2;
+      }
+
+      .plan {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        background-color: var(--pale-blue2);
+        padding: 1rem;
+        border-radius: 15px;
+        margin: 2rem;
+      }
+
+      .plan .plan-info {
+        flex: 1;
+        text-align: left;
+        margin-left: 1rem;
+      }
+
+      .plan .plan-info p {
+        font-size: 0.9rem;
+        color: var(--desaturated-blue);
+      }
+
+      .plan .plan-info h4 {
+        color: var(--dark-blue);
+      }
+
+      .plan .change-link a {
+        color: var(--bright-blue);
+        transition-duration: 0.2s;
+      }
+
+      .plan .change-link a:hover {
+        text-decoration: none;
+        color: var(--desaturated-blue);
+      }
+
+      .buttons button {
+        margin: 0.5rem 0;
+      }
+
+      .btn {
+        padding: 1rem;
+        border-radius: 15px;
+        width: 100%;
+        font-size: 1rem;
+        border: none;
+        cursor: pointer;
+      }
+
+      .btn.btn-primary {
+        background-color: var(--bright-blue);
+        color: #fff;
+        font-weight: 700;
+        box-shadow: 0 1rem 1rem 0.5rem var(--pale-blue);
+        border: 1px solid var(--desaturated-blue);
+      }
+
+      .btn.btn-primary:hover {
+        background-color: var(--desaturated-blue);
+      }
+
+      .btn.btn-secondary {
+        background-color: transparent;
+        color: var(--desaturated-blue);
+        font-weight: 700;
+      }
+
+      .btn.btn-secondary:hover {
+        color: var(--dark-blue);
+      }
+
+      .attribution {
+        position: fixed;
+        bottom: 0;
+        font-size: 11px;
+        text-align: center;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      @media screen and (max-width: 375px) {
+        .plan {
+          flex-direction: column;
+          height: 12rem;
+          justify-content: space-between;
+        }
+
+        .plan .plan-info {
+          flex: 0;
+          text-align: center;
+        }
+
+        .plan .icon img {
+          width: 4rem;
+        }
+      }
+
+      @media screen and (min-width: 768px) {
+        body {
+          background-image: url("images/pattern-background-desktop.svg");
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="image"></div>
+      <div class="content">
+        <div class="info">
+          <h2>Order Summary</h2>
+          <p>
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+        </div>
+        <div class="plan">
+          <div class="icon">
+            <img src="images/icon-music.svg" alt="music" />
+          </div>
+          <div class="plan-info">
+            <h4>Annual plan</h4>
+            <p>$59.99/year</p>
+          </div>
+          <div class="change-link">
+            <a href="#">Change</a>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="btn btn-primary">Proceed to Payment</button>
+          <button class="btn btn-secondary">Cancel Order</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.github.com/kalexei/order-summary-component"
+        >Aleksei Kovalev</a
+      >.
+    </div>
+  </body>
+</html>
