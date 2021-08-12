@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution](https://your-solution-url.com)
+- [Solution](https://www.frontendmentor.io/solutions/responsive-order-summary-card-using-css-flexbox-and-css-variables-yMyfk1DwH)
 - [Live Site](https://kalexei-order-summary.netlify.app)
 
 ### Built with
@@ -40,6 +40,6 @@ Users should be able to:
 
 ## Author
 
-- Website - [Aleksei Kovalev](https://www.your-site.com)
+- Website - [Aleksei Kovalev](https://www.github.com/kalexei)
 - Frontend Mentor - [@AlekseiK412](https://www.frontendmentor.io/profile/AlekseiK412)
-- Twitter - [@_kalexei_](https://www.twitter.com/_kalexei_)
+- Twitter - [@\_kalexei\_](https://www.twitter.com/_kalexei_)
